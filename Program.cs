@@ -17,7 +17,7 @@ namespace AzureFunctionsTutorials
         public override void Configure(IFunctionsHostBuilder builder)
         {
             // Dependency injections
-            builder.Services.AddTransient<IProductRepository, MockProductRepository>();
+            builder.Services.Inject();
         }
     }
 }
